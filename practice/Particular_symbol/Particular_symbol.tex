@@ -1,0 +1,153 @@
+\documentclass{article}
+\usepackage{ctex}
+\usepackage{xltxtra} 
+\usepackage{texnames}
+\usepackage{mflogo}
+
+\begin{document}
+	\section{空白符号}
+	% 空行分段,多个空行等同1个
+	\subsection{空行分段,多个空行等同1个}
+	I am a student
+	
+	
+	我是我 %多行空行等同于一行
+	
+	%英文中文多个空格处理为1个空格,中文空格将被忽略
+	\subsection{英文中文多个空格处理为1个空格,中文空格将被忽略}
+	I              am a student
+	
+	我        是 我
+	
+	我 是我啊 %中文空格不起作用
+	
+	\subsection{命令}
+	% 1em(当前字体中M的宽度)	
+	a \quad d	
+	
+	% 2em
+	a \qquad d
+	
+	%约等于1/6个em
+	a\,b, a\thinspace b
+	
+	% 0.5个em
+	a\enspace b
+	
+	% 空格
+	a\ b
+	
+	% 硬空格
+	a~b
+	
+	% 1pc = 12pt = 4.218mm
+	a\kern 1pc b
+	
+	a\kern -1em b
+	
+	a\hskip 1em b
+	
+	a\hspace{35pt}b
+	
+	%占位宽度
+	a\hphantom{xyz}b
+	
+	%弹性长度
+	a\hfill b    %充满整个空间
+	\section{\LaTeX 控制符}
+	\subsection{\# 符号}
+	\textbackslash \#
+	\subsection{\$ 符号}
+	\textbackslash \$
+	\subsection{\% 符号}
+	\textbackslash \%
+	\subsection{\& 符号}
+	\textbackslash \&
+	\subsection{\{ 符号}
+	\textbackslash \{
+	\subsection{\} 符号}
+	\textbackslash \}
+	\subsection{\~{} 符号}
+	\textbackslash \~{} \{\}
+	\subsection{\_{} 符号}
+	\textbackslash \_{} \{\}
+	\subsection{\^{} 符号}
+	\textbackslash \^{} \{\}
+	\subsection{\textbackslash 符号}
+	\textbackslash textbackslash
+	
+	
+	\section{排版符号}
+	\S{} \P{} \dag{} \ddag{} \copyright{} \pounds{}
+	
+	\section{\TeX 标志符号}
+	% 基本符号
+	\TeX{}
+	\LaTeX{}
+	\LaTeXe{}
+	
+	% xltxtra宏包提供
+	\XeLaTeX{}
+	
+	% texnames宏包提供
+	\AmSTeX{} \AmS-\LaTeX{}
+	\BibTeX{} \LuaTeX{}
+	
+	% mflogo宏包提供
+	\METAFONT{} 
+	\MF{} 
+	\MP{}
+	\section{引号}
+	` ' `` '' 
+	
+	eg:``你好啊''
+	\section{连字符}
+	-
+	--
+	---
+	\section{非英文字符}
+	\oe
+	
+	\OE
+	
+	\ae
+	
+	\AE
+	
+	\aa
+	
+	\AA
+	
+	\o
+	
+	\O
+	
+	\l
+	
+	\L
+	
+	\ss
+	
+	\SS
+	
+	!`
+	
+	?`
+	
+	\section{重音符号(以o为例)}
+	\`o 
+	\'o 
+	\^o 
+	\''o 
+	\~o 
+	\=o 
+	\.o 
+	\u{o}
+	\v{o}
+	\H{o}
+	\r{o}
+	\t{o}
+	\b{o}
+	\c{o}
+	\d{o}
+\end{document}
