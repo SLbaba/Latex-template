@@ -1,0 +1,106 @@
+\documentclass{article}
+\usepackage{ctex}
+\usepackage{amsmath}   %equation*环境需要amsmath宏包
+\begin{document}
+	\section{简介}
+	\LaTeX{}将排版内容分为文本模式和数学模式。文本模式用于普通文本排版, 数学模式用于数学公式排版。
+	\section{行内公式}
+	\subsection{美元符号}
+	交换律是 $a+b=b+a$,如$1+2=2+1=3$
+	\subsection{小括号}
+	交换律是 \(a+b=b+a\),如\(1+2=2+1=3\)
+	\subsection{math环境}
+	交换律是 \begin{math}a+b=b+a\end{math}
+	,如\begin{math}1+2=2+1=3\end{math}
+	\section{上下标}
+	\subsection{上标}
+	\LaTeX{}中上标用\^{} 
+	
+	$3x{20}-x+2=0$
+	
+	$3x^{3x{20}-x+2=0}-x+2=0$
+	\subsection{下标}
+	
+	\LaTeX{}中下表用\_{}
+	
+	$a_0$,$a_1$,$a_2$
+	
+	$a_0$,$a_1$,$a_2$,.....,$a_{3x^{20}-x+2}$
+	
+	\section{希腊字母}
+	$\alpha$
+	$\beta$
+	$\gamma$
+	$\epsilon$
+	$\pi$
+	$\omega$
+	
+	$\Gamma$
+	$\Delta$
+	$\Theta$
+	$\Pi$  %跟前面那个有区别，这个是大写的，上面那个是小写的
+	$\Omega$
+	
+	$\alpha^2 + \beta^2 = \gamma^2$
+	\section{数学函数}
+	$\log$
+	$\sin$
+	$\cos$
+	$\arcsin$
+	$\arccos$
+	$\ln$
+	
+	$\sin^2 x + \cos^2 x = 1$
+	$y = \arcsin x$
+	
+	$y = \ln x^{100}$
+	
+	$\sqrt{2}$
+	$\sqrt{x^2 + y^2}$
+	$\sqrt{2 + \sqrt{x^2 + 4}}$
+	$\sqrt[5]{2 + \sqrt[2]{x^{10}+7}}$
+	\section{分式}
+	$\frac{x}{x^2+x+1}$
+	
+	$\frac{\sqrt{x-1}}{\sqrt{x+1}}$
+	
+	$\frac{1}{1+ \frac{1}{x}}$
+	
+	$\sqrt{\frac{x}{x^2+x+1}}$
+	\section{行间公式}
+	
+	\subsection{美元符号}
+	交换律是
+	$$a +b=b+a$$
+	如
+	$$1+2=2+1=3$$
+	\subsection{中括号}
+	交换律是
+	\[a+b=b+a\]
+	如
+	\[1+2=2+1=3\]
+	\subsection{displaymath环境}
+	交换律是
+	\begin{displaymath}	a+b=b+a \end{displaymath}
+	如
+	\begin{displaymath}1+2=2+1=3\end{displaymath}
+	\subsection{自动编号公式equation环境}
+	交换律见式\ref{eq:commutative1}
+	\begin{equation}
+		a+b=b+a   \label{eq:commutative1}
+	\end{equation}
+	\subsection{不编号公式equation*环境}
+	交换律见式\ref{eq:commutative2}
+	\begin{equation*}
+		a+b=b+a \label{eq:commutative2}
+	\end{equation*}
+
+	交换律见式\ref{eq:commutative3}
+	\begin{equation}
+		a+b=b+a \label{eq:commutative3}
+	\end{equation}
+	公式的编号与交叉引用也是自动实现的，大家在排版中，要习惯于采用自动化的方式处理诸如图，表，公式的编号与交叉引用。再如公式\ref{eq:other}
+	\begin{equation}
+		x^5-7x^3+4x \label{eq:other}
+	\end{equation}
+\end{document}
