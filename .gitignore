@@ -2,4 +2,6 @@
 *.log
 *.pdf
 *.gz
+*.blg
+*.bbl
 NEUCSE_Lab_report/
