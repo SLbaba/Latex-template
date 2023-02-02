@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{ctex}
+%texdoc booktab
+%texdoc longtab
+%texdoc tabu
+%一个自动生成latex表格命令的网站https://www.tablesgenerator.com/
+\begin{document}
+	%表格环境
+	\section{tabular表格环境}
+	
+	\subsection{基础表格}
+	l表示左对齐,r表示右对齐,c表示居中 
+	
+	\begin{tabular}{l c c c r}  
+		序号 & 姓名 & 高数 & 大英 & 线代 \\
+		1    & 小李 & 100 & 89 & 100 \\
+		2	 & 欧阳昊宇 & 98 & 96 & 95 \\
+		3    & 小张 & 94 & 99 & 94 	
+	\end{tabular}
+	
+	\subsection{表格横线，表格竖线}
+	|表示表格竖线,\textbackslash hline表示表格横线 \\
+	
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		序号 & 姓名 & 高数 & 大英 & 线代 \\
+		\hline
+		1    & 小李 & 100 & 89 & 100 \\
+		\hline
+		2	 & 欧阳昊宇 & 98 & 96 & 95 \\
+		\hline
+		3    & 小张 & 94 & 99 & 94 \\
+		\hline
+	\end{tabular}
+
+	\subsection{p \{宽\}}
+	p\{<宽>\} ---本列宽度固定，能够自动换行
+		\begin{tabular}{|c|p{0.5cm}|c|c|c|}
+		\hline
+		序号 & 姓名 & 高数 & 大英 & 线代 \\
+		\hline
+		1    & 小李 & 100 & 89 & 100 \\
+		\hline
+		2	 & 欧阳昊宇 & 98 & 96 & 95 \\
+		\hline
+		3    & 小张 & 94 & 99 & 94 \\
+		\hline
+	\end{tabular}
+\end{document}
