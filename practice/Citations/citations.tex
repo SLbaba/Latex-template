@@ -1,0 +1,15 @@
+\documentclass{article}
+\usepackage{ctex}
+\usepackage[]{natbib} %natbib宏包提供更多的样式 []里面可以指定样式
+\bibliographystyle{unsrt}  %指定排版样式 %plain unsrt alpha abbrv 这是不同的参考文献排版样式
+\begin{document}
+	这是一个来自Google学术的文献引用\cite{__2021}
+	
+	这是一个来自Google学术的文献引用\citep{__2022-2}
+	
+	这是一个来自baidu学术的文献引用\cite{ngiam_multimodal_2009}
+	
+	\nocite{*}   %引用所有参考文献
+	
+	\bibliography{./ref_data/Google_scholar.bib,./ref_data/baidu_scholar.bib} %指定参考文献的路径，中间用逗号隔开
+\end{document}
