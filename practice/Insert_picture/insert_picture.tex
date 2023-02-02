@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage{ctex}
+\usepackage{graphicx}
+\graphicspath{{figure/}}
+\begin{document}
+%	\includegraphics[width=0.5\textwidth,height=0.1\textheight]{Danboard.png}
+%	\includegraphics[width=10cm,height=8cm]{test.jpg} 
+	
+%	\includegraphics[scale = 0.5]{test.jpg}
+	
+	\section{\textbackslash includegraphics命令}
+	\subsection{\textbackslash textwidth命令}
+	\textbackslash textwidth 是 LaTeX 中的一个变量，表示文档中文本宽度的尺寸。它是在文档类型定义中确定的，并可以在文档的其他部分中使用。例如，在文本框内的文本的宽度可以通过将其与 \textbackslash textwidth 进行比较来确定。
+	
+	\includegraphics[width=0.125\textwidth]{test.jpg}
+	
+	\includegraphics[width=0.25\textwidth]{test.jpg}
+	
+	\includegraphics[width=0.5\textwidth]{test.jpg}
+	
+	\includegraphics[width=1\textwidth]{test.jpg}
+	
+	\subsection{\textbackslash textheight命令}
+	\textbackslash textheight 是 LaTeX 中的一个变量，表示文档中文本高度的尺寸。它是在文档类型定义中确定的，并可以在文档的其他部分中使用。例如，在文本框内的文本的高度可以通过将其与 \textbackslash textheight 进行比较来确定。
+	
+	\includegraphics[height=0.125\textheight]{test.jpg}
+	
+	\includegraphics[height=0.25\textheight]{test.jpg}
+	
+	\includegraphics[height=0.5\textheight]{test.jpg}
+	
+	\includegraphics[height=1\textheight]{test.jpg}
+	
+	\subsection{旋转角度angle参数}
+	\includegraphics[angle=90]{test.jpg}
+	
+	\includegraphics[angle=180]{test.jpg}
+	
+	\includegraphics[angle=-90]{test.jpg}
+	
+	\includegraphics[angle=-180]{test.jpg}
+	
+	\subsection{指定height和width}
+	注意单位是cm.
+	\subsubsection{指定height}
+	
+	\includegraphics[height=1cm]{test.jpg}
+	
+	\includegraphics[height=2cm]{test.jpg}
+	
+	\includegraphics[height=3cm]{test.jpg}
+	
+	\includegraphics[height=4cm]{test.jpg}
+	
+	\includegraphics[height=10cm]{test.jpg}
+	\subsubsection{指定width}
+	
+	\includegraphics[width=1cm]{test.jpg}
+	
+	\includegraphics[width=2cm]{test.jpg}
+	
+	\includegraphics[width=3cm]{test.jpg}
+	
+	\includegraphics[width=4cm]{test.jpg}
+	
+	\includegraphics[width=5cm]{test.jpg}	
+	
+	\includegraphics[width=10cm]{test.jpg}
+	
+\end{document}
